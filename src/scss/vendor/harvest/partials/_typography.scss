@@ -1,6 +1,19 @@
 
-h1 {
-  @extend .opensans-semibold;
+$base-font-size: 15px;
 
-  font-size: 52px;
+html, body {
+  // Set base font size.
+  font-size: $base-font-size;
+}
+
+$header-font-size: 1rem;
+@for $i from 6 through 1 {
+  h#{$i} {
+    @extend .opensans-semibold;
+
+    font-size: $header-font-size;
+  }
+
+  // Bump the font size by 130% for the next header.
+  $header-font-size: $header-font-size * 1.3;
 }
