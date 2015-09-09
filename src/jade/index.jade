@@ -1,5 +1,12 @@
 doctype html
 
+mixin exampleSection(level, title, classes) 
+  section(class=classes)
+    #{'h' + level}.demo= title
+    
+    // Yield to block
+    block
+
 html
   head
     title Harvest UI Kit Demo
@@ -7,4 +14,47 @@ html
     link(rel='stylesheet', href='/css/styles.css')
   
   body
-    h1 Harvest UI Kit Demo
+    section.intro
+      h1.demo Harvest UI Kit Demo
+    
+    +exampleSection(2, 'Typography')
+    
+      +exampleSection(3, 'Headings')
+      
+      +exampleSection(3, 'Body Text')
+      
+      +exampleSection(3, 'Links')
+    
+      
+    +exampleSection(2, 'Color Palette')
+    
+    
+    +exampleSection(2, 'Buttons')
+    
+      +exampleSection(3, 'Small')
+      
+      +exampleSection(3, 'Medium')
+      
+    
+      +exampleSection(3, 'Large')
+    
+    
+    +exampleSection(2, 'Inputs')
+    
+      +exampleSection(3, 'Text')
+      
+      +exampleSection(3, 'Controls')
+      
+      +exampleSection(3, 'Dropdowns')
+      
+      +exampleSection(3, 'Tags')
+    
+      
+    +exampleSection(2, 'Navigation Bars')
+    
+    
+    +exampleSection(2, 'Demos')
+    
+    
+    
+    
