@@ -1,3 +1,22 @@
 
 // Import Open Sans from Google Web Fonts
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,300);
+
+// Define font family/weight combinations for reuse by other components.
+.opensans-light {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.opensans-regular {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.opensans-semibold {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
