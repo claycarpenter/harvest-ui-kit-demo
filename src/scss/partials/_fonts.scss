@@ -1,0 +1,18 @@
+
+// Import Lato from Google Web Fonts
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300);
+
+// Define font family/weight combinations for reuse by other components.
+@mixin lato($weight) {
+  font-family: 'Lato', sans-serif;
+  font-weight: $weight;
+  font-style: normal;
+}
+
+.lato-light {
+  @include lato(300);
+}
+
+.lato-regular {
+  @include lato(400);
+}
