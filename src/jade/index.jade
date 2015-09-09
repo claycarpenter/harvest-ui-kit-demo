@@ -107,22 +107,103 @@ html
     +exampleSection(2, 'Buttons')
     
       +exampleSection(3, 'Small')
+        button.btn.small Default
+        
+        button.btn.small.primary Primary
+        
+        button.btn.small.secondary Secondary 
       
       +exampleSection(3, 'Medium')
-      
+        button.btn Default
+        
+        button.btn.primary Primary
+        
+        button.btn.secondary Secondary 
     
       +exampleSection(3, 'Large')
+        button.btn.large Default
+        
+        button.btn.large.primary Primary
+        
+        button.btn.large.secondary Secondary 
+      
+      +exampleSection(3, 'Disabled')
+        button.btn.disabled Default
+        
+        button.btn.primary.disabled Primary
+        
+        button.btn.secondary.disabled Secondary 
     
     
     +exampleSection(2, 'Inputs')
     
       +exampleSection(3, 'Text')
+        .label Empty
+        input(type='text', placeholder='Placeholder')
+          
+        .label Filled
+        input(type='text', placeholder='Name', value='George Washington')
+          
+        .label Error
+        input.error(type='email', placeholder='Email', value='invalid@email')
+          
+        .label Disabled
+        input.disabled(type='text', placeholder='Name', value='George Washington')
       
       +exampleSection(3, 'Controls')
-      
+        .label Checkboxes
+        label
+          input(type='checkbox')
+          | Unchecked
+            
+        label
+          input(type='checkbox', checked)
+          | Checked
+            
+        label
+          input(type='checkbox', disabled)
+          | Unchecked, disabled
+            
+        label
+          input(type='checkbox', disabled, checked)
+          | Checked, disabled
+            
+        .label Radio Buttons
+        label
+          input(type='radio', name='radios1')
+          | Off
+            
+        label
+          input(type='radio', name='radios1', checked)
+          | On
+            
+        label
+          input(type='radio', name='radios2', disabled)
+          | Unchecked, disabled
+            
+        label
+          input(type='radio', name='radios2', disabled, checked)
+          | Checked, disabled
+        
       +exampleSection(3, 'Dropdowns')
+        button.dropdown
+          ul
+            li Action 1
+            li Action 2
+            li Action 3
+        
+        button.select
+          ul
+            li.selected Option 1
+            li Option 2
+            li Option 3
       
       +exampleSection(3, 'Tags')
+        .tags-input
+          .tag Tag One
+          .tag Tag One
+          .tag Tag One
+          input(type='text')
     
       
     +exampleSection(2, 'Navigation Bars')
