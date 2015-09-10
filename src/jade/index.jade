@@ -20,55 +20,55 @@ html
     +exampleSection(2, 'Typography')
     
       +exampleSection(3, 'Headings')
-        .label Heading 1
+        .demo-label Heading 1
         h1 Tilde cliche Kickstarter paleo
         
-        .label Heading 2
+        .demo-label Heading 2
         h2 Tilde cliche Kickstarter paleo
         
-        .label Heading 3
+        .demo-label Heading 3
         h3 Tilde cliche Kickstarter paleo
         
-        .label Heading 4
+        .demo-label Heading 4
         h4 Tilde cliche Kickstarter paleo
         
-        .label Heading 5
+        .demo-label Heading 5
         h5 Tilde cliche Kickstarter paleo
         
-        .label Heading 6
+        .demo-label Heading 6
         h6 Tilde cliche Kickstarter paleo
       
       +exampleSection(3, 'Body Text')
-        .label Body Text
+        .demo-label Body Text
         p 
           | VHS slow-carb normcore 8-bit, #[em chillwave kogi ] brunch lo-fi biodiesel XOXO listicle Kickstarter letterpress tote bag cold-pressed. Keffiyeh chia dreamcatcher XOXO single-origin coffee, raw denim sartorial pour-over bitters #[strong biodiesel kitsch ] vinyl blog Truffaut lumbersexual. Lumbersexual Bushwick four loko sartorial Banksy, polaroid lo-fi letterpress McSweeney's #[b Helvetica ] PBR. Cray Neutra #[i post-ironic ] Etsy, organic sustainable small batch locavore selvage church-key heirloom fixie sriracha.
         
-        .label Small Text
+        .demo-label Small Text
         p.small-text
           | Bicycle rights Odd Future ugh pop-up, street art Williamsburg tote bag craft beer DIY Vice fashion axe gluten-free health goth asymmetrical irony. Food truck blog Pinterest, +1 Schlitz aesthetic cornhole fanny pack trust fund.
         
-        .label Lead Text
+        .demo-label Lead Text
         p.lead-text
           | Bicycle rights Odd Future ugh pop-up, street art Williamsburg tote bag craft beer DIY Vice fashion axe gluten-free health goth asymmetrical irony. Food truck blog Pinterest, +1 Schlitz aesthetic cornhole fanny pack trust fund.
         
-        .label Quote Text
+        .demo-label Quote Text
         blockquote
           | Bicycle rights Odd Future ugh pop-up, street art Williamsburg tote bag craft beer DIY Vice fashion axe gluten-free health goth asymmetrical irony. Food truck blog Pinterest, +1 Schlitz aesthetic cornhole fanny pack trust fund.
           cite Jason Cosper, Hipster Ipsum
       
       +exampleSection(3, 'Links')
-        .label Default
+        .demo-label Default
         a(href='#0') Messenger bag gluten-free twee forage
         
-        .label Primary
+        .demo-label Primary
         a.primary(href='#0') Messenger bag gluten-free twee forage
         
-        .label Secondary
+        .demo-label Secondary
         a.secondary(href='#0') Messenger bag gluten-free twee forage
     
       
     +exampleSection(2, 'Color Palette')
-      .label Default
+      .demo-label Default
       ul.color-palette
         li.default-bg
           p Pure
@@ -80,7 +80,7 @@ html
           p Active
           p #973A28
           
-      .label Primary
+      .demo-label Primary
       ul.color-palette
         li.primary-bg
           p Pure
@@ -92,7 +92,7 @@ html
           p Active
           p #0C484F
       
-      .label Secondary
+      .demo-label Secondary
       ul.color-palette
         li.secondary-bg
           p Pure
@@ -138,20 +138,20 @@ html
     +exampleSection(2, 'Inputs')
     
       +exampleSection(3, 'Text')
-        .label Empty
+        .demo-label Empty
         input(type='text', placeholder='Placeholder')
           
-        .label Filled
+        .demo-label Filled
         input(type='text', placeholder='Name', value='George Washington')
           
-        .label Error
+        .demo-label Error
         input.error(type='email', placeholder='Email', value='invalid@email')
           
-        .label Disabled
+        .demo-label Disabled
         input.disabled(type='text', placeholder='Name', value='George Washington')
       
       +exampleSection(3, 'Controls')
-        .label Checkboxes
+        .demo-label Checkboxes
         label
           input(type='checkbox')
           | Unchecked
@@ -168,7 +168,7 @@ html
           input(type='checkbox', disabled, checked)
           | Checked, disabled
             
-        .label Radio Buttons
+        .demo-label Radio Buttons
         label
           input(type='radio', name='radios1')
           | Off
@@ -186,12 +186,14 @@ html
           | Checked, disabled
         
       +exampleSection(3, 'Dropdowns')
+        .demo-label Dropdown
         button.dropdown
           ul
             li Action 1
             li Action 2
             li Action 3
         
+        .demo-label Select
         button.select
           ul
             li.selected Option 1
